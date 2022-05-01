@@ -36,8 +36,6 @@ class BinarySearchTree {
           } else {
             return searchPlace(elem.right)
           }
-        } else {
-          return null
         }
       }
       return searchPlace(elem)
@@ -83,6 +81,7 @@ class BinarySearchTree {
         if (!elem.right) return elem.left
         if (!elem.left) return elem.right
 
+        ///Оба ребенка есть
         let newElem = elem.right
 
         while(newElem.left) {
